@@ -1,5 +1,7 @@
 ﻿
 
+using System.Runtime.CompilerServices;
+
 namespace Documentos
 {
     public class Documento
@@ -137,8 +139,99 @@ namespace Documentos
             int pivote = ObtenerPivote(inicio, fin, criterio);
             OrdenarRapido(inicio, pivote - 1, criterio);
             OrdenarRapido(pivote + 1, fin, criterio);
-
         }
-    
+
+        public static void OrdenarPorInsecion(int criterio)
+        {
+            if (criterio == 0)
+            {
+                documentos.Sort((d1, d2) =>
+                {
+                    int result = string.Compare(d1.NombreCompleto, d2.NombreCompleto);
+                    if (result == 0)
+                    {
+                        result = string.Compare(d1.TipoDocumento, d2.TipoDocumento);
+                    }
+                    return result;
+                });
+            }
+            else
+            {
+                documentos.Sort((d1, d2) =>
+                {
+                    int result = string.Compare(d1.TipoDocumento, d2.TipoDocumento);
+                    if (result == 0)
+                    {
+                        result = string.Compare(d1.NombreCompleto, d2.NombreCompleto);
+                    }
+                    return result;
+                });
+            }
+        }
+
+        public static void OrdenarPorMezcla(int criterio)
+        {
+            documentos = MergeSort(documentos, criterio);
+        }
+
+        public static List<Documento> MergeSort(List<Documento> lista, int criterio)
+        {
+            if (lista.Count <= 1) return lista;
+
+            int mid = lista.Count / 2;
+            var left = lista.GetRange(0, mid);
+            var right = lista.GetRange(mid, lista.Count - mid);
+
+            left = MergeSort(left, criterio);
+            right = MergeSort(right, criterio);
+
+            return Merge(left, right, criterio);
+        }
+
+        private static List<Documento> Merge(List<Documento> left, List<Documento> right, int criterio)
+        {
+            List<Documento> result = new List<Documento>();
+            int i = 0, j = 0;
+
+            while (i < left.Count && j < right.Count)
+            {
+                Documento d1 = left[i];
+                Documento d2 = right[j];
+                int comparison;
+
+                if (criterio == 0)
+                {
+                    comparison = string.Compare(d1.NombreCompleto, d2.NombreCompleto);
+                    if (comparison == 0)
+                    {
+                        comparison = string.Compare(d1.TipoDocumento, d2.TipoDocumento);
+                    }
+                }
+                else
+                {
+                    comparison = string.Compare(d1.TipoDocumento, d2.TipoDocumento);
+                    if (comparison == 0)
+                    {
+                        comparison = string.Compare(d1.NombreCompleto, d2.NombreCompleto);
+                    }
+                }
+
+                if (comparison <= 0)
+                {
+                    result.Add(d1);
+                    i++;
+                }
+                else
+                {
+                    result.Add(d2);
+                    j++;
+                }
+            }
+
+            result.AddRange(left.GetRange(i, left.Count - i));
+            result.AddRange(right.GetRange(j, right.Count - j));
+
+            return result;
+        }
     }
 }

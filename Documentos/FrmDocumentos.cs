@@ -42,5 +42,35 @@ namespace Documentos
                 MessageBox.Show("Debe seleccionar un criterio de ordenamiento");
             }
         }
+
+        private void btnOrdenarInsercion_Click(object sender, EventArgs e)
+        {
+            if (cmbCriterio.SelectedIndex >= 0)
+            {
+                Util.IniciarCronometro();
+                Documento.OrdenarPorInsecion(cmbCriterio.SelectedIndex);
+                txtTiempo.Text = Util.GetTextoTiempoCronometro();
+                Documento.Mostrar(dgvDocumentos);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un criterio de ordenamiento");
+            }
+        }
+
+        private void btnOrdenarMezcla_Click(object sender, EventArgs e)
+        {
+            if (cmbCriterio.SelectedIndex >= 0)
+            {
+                Util.IniciarCronometro();
+                Documento.OrdenarPorMezcla(cmbCriterio.SelectedIndex);
+                txtTiempo.Text = Util.GetTextoTiempoCronometro();
+                Documento.Mostrar(dgvDocumentos);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un criterio de ordenamiento");
+            }
+        }
     }
 }

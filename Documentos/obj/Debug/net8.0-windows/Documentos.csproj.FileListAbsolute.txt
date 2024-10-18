@@ -34,3 +34,22 @@ D:\Catedra\IU Pascual Bravo\Estructura de Datos\Cursos\Curso 2024-02\Ejercicios\
 D:\Catedra\IU Pascual Bravo\Estructura de Datos\Cursos\Curso 2024-02\Ejercicios\Documentos\Documentos\obj\Debug\net8.0-windows\Documentos.pdb
 D:\Catedra\IU Pascual Bravo\Estructura de Datos\Cursos\Curso 2024-02\Ejercicios\Documentos\Documentos\obj\Debug\net8.0-windows\Documentos.genruntimeconfig.cache
 D:\Catedra\IU Pascual Bravo\Estructura de Datos\Cursos\Curso 2024-02\Ejercicios\Documentos\Documentos\obj\Debug\net8.0-windows\ref\Documentos.dll
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Documentos.exe
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Datos\Datos.csv
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Documentos.deps.json
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Documentos.runtimeconfig.json
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Documentos.dll
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\bin\Debug\net8.0-windows\Documentos.pdb
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.FrmDocumentos.resources
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.Properties.Resources.resources
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.csproj.GenerateResource.cache
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.AssemblyInfoInputs.cache
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.AssemblyInfo.cs
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.csproj.CoreCompileInputs.cache
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.sourcelink.json
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.dll
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\refint\Documentos.dll
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.pdb
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\Documentos.genruntimeconfig.cache
+C:\Users\isaiv\Desktop\GIT\IUPB_ED_Ordenamiento\Documentos\obj\Debug\net8.0-windows\ref\Documentos.dll

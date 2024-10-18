@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDocumentos));
             toolStrip1 = new ToolStrip();
             btnOrdenar = new ToolStripButton();
             btnOrdenarRapido = new ToolStripButton();
             cmbCriterio = new ToolStripComboBox();
             txtTiempo = new ToolStripTextBox();
+            btnOrdenarInsercion = new ToolStripButton();
+            btnOrdenarMezcla = new ToolStripButton();
             dgvDocumentos = new DataGridView();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDocumentos).BeginInit();
@@ -41,10 +44,10 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { btnOrdenar, btnOrdenarRapido, cmbCriterio, txtTiempo });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnOrdenar, btnOrdenarRapido, cmbCriterio, txtTiempo, btnOrdenarInsercion, btnOrdenarMezcla });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(583, 55);
+            toolStrip1.Size = new Size(701, 55);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -83,6 +86,30 @@
             txtTiempo.Name = "txtTiempo";
             txtTiempo.Size = new Size(100, 55);
             // 
+            // btnOrdenarInsercion
+            // 
+            btnOrdenarInsercion.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnOrdenarInsercion.Image = (Image)resources.GetObject("btnOrdenarInsercion.Image");
+            btnOrdenarInsercion.ImageScaling = ToolStripItemImageScaling.None;
+            btnOrdenarInsercion.ImageTransparentColor = Color.Magenta;
+            btnOrdenarInsercion.Name = "btnOrdenarInsercion";
+            btnOrdenarInsercion.Size = new Size(52, 52);
+            btnOrdenarInsercion.Text = "toolStripButton1";
+            btnOrdenarInsercion.ToolTipText = "Ordenar por inserción";
+            btnOrdenarInsercion.Click += btnOrdenarInsercion_Click;
+            // 
+            // btnOrdenarMezcla
+            // 
+            btnOrdenarMezcla.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnOrdenarMezcla.Image = (Image)resources.GetObject("btnOrdenarMezcla.Image");
+            btnOrdenarMezcla.ImageScaling = ToolStripItemImageScaling.None;
+            btnOrdenarMezcla.ImageTransparentColor = Color.Magenta;
+            btnOrdenarMezcla.Name = "btnOrdenarMezcla";
+            btnOrdenarMezcla.Size = new Size(52, 52);
+            btnOrdenarMezcla.Text = "toolStripButton1";
+            btnOrdenarMezcla.ToolTipText = "Prdenar por Mezcla";
+            btnOrdenarMezcla.Click += btnOrdenarMezcla_Click;
+            // 
             // dgvDocumentos
             // 
             dgvDocumentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -91,14 +118,14 @@
             dgvDocumentos.Margin = new Padding(3, 2, 3, 2);
             dgvDocumentos.Name = "dgvDocumentos";
             dgvDocumentos.RowHeadersWidth = 51;
-            dgvDocumentos.Size = new Size(583, 283);
+            dgvDocumentos.Size = new Size(701, 463);
             dgvDocumentos.TabIndex = 1;
             // 
             // FrmDocumentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(583, 338);
+            ClientSize = new Size(701, 518);
             Controls.Add(dgvDocumentos);
             Controls.Add(toolStrip1);
             Margin = new Padding(3, 2, 3, 2);
@@ -119,5 +146,7 @@
         private ToolStripButton btnOrdenarRapido;
         private ToolStripComboBox cmbCriterio;
         private ToolStripTextBox txtTiempo;
+        private ToolStripButton btnOrdenarInsercion;
+        private ToolStripButton btnOrdenarMezcla;
     }
 }
